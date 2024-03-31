@@ -58,25 +58,25 @@
   text-shadow: 5px 5px 10px black;
 }
 //service
-.card {
-  animation: myAnim 2s ease 0s 2 normal forwards;
-}
-@keyframes myAnim {
-  0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    transform: scale(1);
-  }
+// .card {
+//   animation: myAnim 2s ease 0s 2 normal forwards;
+// }
+// @keyframes myAnim {
+//   0% {
+//     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+//     transform: scale(1);
+//   }
 
-  100% {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    transform: scale(1.1);
-  }
-}
-.card:hover {
-  background-color: #ca5146;
-  border: 1px solid #ca5146;
-  cursor: pointer;
-}
+//   100% {
+//     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+//     transform: scale(1.1);
+//   }
+// }
+// .card:hover {
+//   background-color: #ca5146;
+//   border: 1px solid #ca5146;
+//   cursor: pointer;
+// }
 
 .portfolio-container {
   height: 500px;
