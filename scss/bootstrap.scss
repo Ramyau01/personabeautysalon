@@ -1,0 +1,68 @@
+// Font
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+//colors
+$primary: #f36463;
+$secondary: #35353a;
+$light: #f0ede9;
+$body-bg: $light;
+$dark: #050505;
+$info: #f1d6d6;
+
+//Spacing
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+  9: $spacer * 13,
+  10: $spacer * 14,
+  11: $spacer * 15,
+) !default;
+
+$headings-margin-bottom: $spacer * 1;
+$line-height-base: 1.7;
+
+//Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $primary;
+
+//Buttons
+
+$button-radius: 50px;
+$button-padding-x: 30px;
+$button-padding-y: 5px;
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+
+$btn-padding-y: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+
+//Toggle bar button radius
+$navbar-toggler-border-radius: 0.3rem;
+$navbar-toggler-padding-x: 0.25rem;
+
+// $headings-font-weight: 500 !default;
+$headings-font-weight: bold;
+
+//card
+$card-spacer-x: 0rem;
+$card-cap-bg: $light;
+//container-xl
+$gutter-x: 0rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

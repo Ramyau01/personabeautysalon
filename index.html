@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+     <link rel="stylesheet" href="css/glider.css" />
+    <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
+    <title>Persona Bridal Studio</title>
+    <!-- <style>
+      * {
+        border: 1px solid red;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- navigation starts -->
+    <nav
+      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-md sticky-top shadow-lg"
+    >
+      <div class="container-fluid">
+        <!-- icon & brand name -->
+        <a href="index.html" aria-current="page" class="navbar-brand">
+          <img src="images/logo.png" alt="logo" width="150" />
+        </a>
+        <!-- hamburger icon & nav-items-->
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler btn-outline-primary"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+          <ul class="navbar-nav ms-5">
+            <li class="nav-item">
+              <a href="#about" class="nav-link fw-semibold">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#services" class="nav-link fw-semibold">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolios" class="nav-link fw-semibold">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link fw-semibold"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link fw-semibold">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation ends -->
+
+    <!-- Hero start -->
+    <header class="header position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-4">
+            <div class="hero-container mb-5">
+              <h1 class="fw-bold mt-5 text-white text-center hero-text">
+                Persona Beauty Touch Studio
+              </h1>
+              <p class="lead text-white text-center hero-text">
+                Your ultimate destination for premium makeup and beauty services
+              </p>
+
+              <div class="d-grid d-flex justify-content-center p-2">
+                <a href="#" class="btn btn-primary text-white me-3"
+                  >Learn More</a
+                >
+                <a href="#" class="btn btn-primary text-white">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero end -->
+
+ <!-- services start -->
+    <section id="services">
+      <div class="container-l">
+        <div class="row g-1">
+          <div class="service-container col-md-6 col-lg-3">
+            <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-1">
+              <div class="image-container d-flex flex-row align-items-center">
+                  <img src="images/icons/makeup.png" width="100px" alt="">
+                  <h4 class="card-title">Makeup</h4>
+              </div>
+              <p class="card-text ms-4 pe-2">
+                  Elevating your beauty from weddings to photoshoots, with premium makeup and personalized techniques to ensure you feel confident and stunning on your special day.
+              </p>
+              <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal1">Know More</a>
+              </div>
+            </div>  
+           <!-- Modal start -->
+            <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="serviceModalLabel">Makeup Services</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body p-5">
+                    <h3 class="h3 text-secondary">Our Signature Makeup Styles</h3>
+                    <ul class="list-unstyled list-group list-group-flush mb-5">
+                      <li class="list-group-item">
+                        <h5>
+                          <span class="me-1">
+                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                          </span>
+                          HD Makeup
+                       </h5>
+                        A technique that uses high-definition products and methods to achieve a flawless and natural-looking finish.
+                     </li>
+                      <li class="list-group-item">
+                        <h5>
+                          <span class="me-1">
+                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                          </span>
+                          4K Makeup 
+                        </h5>
+                        We use ultra-high-definition products and techniques to create an incredibly detailed finish suitable for modern high-resolution cameras and screens.
+                      </li>
+
+                      <li class="list-group-item">
+                        <h5>
+                          <span class="me-1">
+                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                          </span>
+                          Airbrush Makeup 
+                        </h5>
+                        A technique that uses compressed air to spray a fine mist of makeup onto the skin for a smooth, even, and long-lasting finish
+                      </li>
+                    </ul>
+
+                    <div class="card mb-4 border-0 bg-info">
+                      <div class="card-body p-3">
+                        <h5 class="text-bg-info">Products We Use</h5>
+                        <span class="badge text-white bg-primary">Revlon</span>
+                        <span class="badge text-white bg-primary">Maybelline</span>
+                        <span class="badge text-white bg-primary">Dior</span>
+                        <span class="badge text-white bg-primary">Mac</span>
+                        <span class="badge text-white bg-primary">Color Bar</span>
+                      </div>
+                    </div>
+      
+                    <div>
+                      <a href="#" class="mb-4" >Explore Our Work</a>
+                    </div>
+     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Contact</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- Modal end -->
+          </div>
+          <!-- makeup column end -->
+
+            <div class="service-container col-md-6 col-lg-3">
+            <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-2">
+              <div class="image-container d-flex flex-row align-items-center">
+                                            <img src="images/icons/hair.png" width="100px" alt="">
+                                                          <h4 class="card-title">Hair Care</h4>
+              </div>
+
+               <p class="card-text ms-4 pe-2">
+                  Whether you're looking to rejuvenate damaged locks, enhance your natural shine, or try a bold new style, our expert stylists are here to help you achieve your hair goals.
+                </p>
+                <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal2">Know More</a>
+              </div>
+                
+              </div>
+            </div>
+ <!-- Modal start -->
+<div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="serviceModalLabel2">Hair Care Services</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-5">
+        <h3 class="h4 text-secondary">Our Signature Hair Treatments</h4>
+        <ul class="list-unstyled list-group list-group-flush mb-5">
+          <li class="list-group-item">
+
+            <h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>Nano Keratin Treatment </h5>
+            This hair treatment reduce frizz, add shine, and improve the overall condition of the hair without using harsh chemicals.
+          </li>
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>Weft Extensions </h5>This technique enhance your hair's appearance by adding length, volume or experiment with different styles without the commitment of permanent extensions. It can cover larger area of the scalp</li>
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>iTip Extensions </h5> This technique is ideal for adding length, volume, or highlights to specific areas of the hair, and they can be blended seamlessly with the natural hair.</li>
+        </ul>
+
+                <div class="card mb-4 border-0 bg-info">
+  <div class="card-body p-3">
+                    <h5 class="text-bg-info">Other Hair Care Services</h5>
+    <span class="badge text-white bg-primary">Hair Cut & Styling</span>
+    <span class="badge text-white bg-primary">Highlights</span> 
+<span class="badge text-white bg-primary">Hair Spa Treatment</span>
+<span class="badge text-white bg-primary">Hair Loss Treatment</span>
+<span class="badge text-white bg-primary">Volumising</span>
+<span class="badge text-white bg-primary">Smoothening</span>
+  </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary">Contact</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+              <!-- Modal end -->
+
+            <div class="service-container col-md-6 col-lg-3">
+            <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-3">
+              <div class="image-container d-flex flex-row align-items-center">
+                                            <img src="images/icons/beauty-treatment.png" width="100px" alt="">
+                                                          <h4 class="card-title">Skin Care</h4>
+              </div>
+
+               <p class="card-text ms-4 pe-2">
+                 Treat yourself to a rejuvenating facial experience  by choosing from a range of skin care services tailored to your needs for a radiant, glowing complexion.
+                </p>
+                   <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal3">Know More</a>
+              </div>
+              </div>
+
+            </div>
+            <!-- modal 3 start -->
+            <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="serviceModalLabel3">Skin Care Services</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-5">
+        <h5 class="h5 text-secondary">Our Signature Skin Care Treatments</h5>
+        <ul class="list-unstyled list-group list-group-flush mb-5">
+  
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>HydraFacial</h5>Its a non-invasive skincare treatment that combines exfoliation, extraction, hydration, and antioxidant protection simultaneously, resulting in clearer, more hydrated, and younger-looking skin. </li>
+         
+        </ul>
+
+                <div class="card mb-4 border-0 bg-info">
+  <div class="card-body p-3">
+                    <h6 class="text-bg-info">Other Skin Care Services</h6>
+    <span class="badge text-white bg-primary">Facials/Bleach</span>
+    <span class="badge text-white bg-primary">Waxing/Threading</span> 
+
+  </div>
+</div>
+
+     
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary">Contact</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <!-- modal 3 end -->
+
+                        <div class="service-container col-md-6 col-lg-3">
+            <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-4">
+              <div class="image-container d-flex flex-row align-items-center">
+                                            <img src="images/icons/education.png" width="100px" alt="">
+                                                          <h4 class="card-title">Beauty Course</h4>
+              </div>
+
+               <p class="card-text ms-4 pe-2">
+                 Discover your passion for Beauty with our comprehensive course, perfect for beginners and seasoned professionals alike.
+                </p>
+                  <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal4">Know More</a>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <!-- gallery start -->
+    <section id="portfolios" class="bg-light py-6">
+      <div class="container h-100 px-5">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+           <h2>Our Work</h2>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-12">
+            <div class="glider-contain multiple" data-glider-options="{&quot;gap&quot;: 20}">
+              <div class="glider">
+                <div class="photo-container text-center rounded-5">
+                 <img src="images/brides/pexels-eternal-slayer-17910669.jpg" alt="" class="photo img-fluid">
+                </div>
+                <!-- 2 -->
+                <div class="photo-container text-center rounded-5">
+                 <img src="images/brides/pexels-farddin-protik-2106685.jpg" alt="" class="photo img-fluid">
+                </div>
+                <!-- 3 -->
+               <div class="photo-container text-center rounded-5">
+                 <img src="images/brides/pexels-nripen-kumar-roy-725462.jpg" alt="" class="photo img-fluid" >
+                </div>
+                <!-- 4 -->
+                <div class="photo-container text-center rounded-5">
+                 <img src="images/brides/pexels-skg-photography-2053852.jpg" alt="" class="photo img-fluid">
+                </div>
+                <!-- 5 -->
+                <div class="photo-container  text-center rounded-5">
+                 <img src="images/brides/pexels-ritam-das-9901792.jpg" alt="" class="photo img-fluid">
+                </div>
+              </div>
+              <button aria-label="Previous" class="glider-prev">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button aria-label="Next" class="glider-next">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+              <div role="tablist" class="glider-dots" id="dots"></div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-md-8 offset-md-2 text-center py-3">
+           <a href="gallery.html">See more of our work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery ends -->
+
+    <!-- Testimonial start -->
+
+    <section id="testimonials">
+      <div class="container-xl p-5">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <h2> What Customers Have To Say</h2>
+          </div>
+           <div class="col-lg-8 offset-lg-2">
+             <div id="testimonialCarousel" class="carousel slide p-5">
+        <div class="carousel-inner">
+       
+                   <!-- slide 1 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+               <p class="w-60 fst-italic">
+                  <span><i class="fa-solid fa-quote-left fa-2x"></i></span>
+                      One of the best salons in Palakkad, client friendly . I appreciate the whole team for their dedication . A special thanks for the hair extensions work done with excellent finishing. I worried about my short hair and now it's all over permanently, I recommend this salon to everyone
+                  <span><i class="fa-solid fa-quote-right fa-2x"></i></span>
+                </p>
+                
+            </div>
+         </div>
+                   <!-- slide 2 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="w-60 fst-italic">
+                  <span><i class="fa-solid fa-quote-left fa-2x"></i></span>
+                      I came across Persona Bridal studio while searching for a Makeup Artist for my wedding. I really liked their  work and went through some feedback and experiences others had with them. I was delighted to know that not only was they available on my wedding dates, they were also willing to travel to my wedding venue which was far from town. We had a very detailed discussion on everything and for me it was really an eye opener learning how important it is to choose a makeup artist for your wedding who is not only good but is knowledgeable and experienced as well. Saritha was very patient, sweet and highly professional in her approach. She was very candid about what was possible and what was not and delivered every single thing she promised. My family was extremely happy that I was ready ahead of time.  I made the best decision of hiring Persona. Highly recommend.
+                  <span><i class="fa-solid fa-quote-right fa-2x"></i></span>
+                </p>
+               
+            </div>
+         </div>
+                   <!-- slide 3 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+               <p class="w-60 fst-italic">
+                  <span><i class="fa-solid fa-quote-left fa-2x"></i></span>
+                      My first time at Persona was truly an amazing experience! I had been wanting to change the color of my highlights, and after seeing the fantastic reviews, I decided to book an appointment. I explained to them what I had in mind, and they did an absolutely fabulous job. I couldn't be happier with the result!
+
+I want to extend my heartfelt thanks to Persona and the entire  team for their exceptional service and talent. I wholeheartedly recommend this place to anyone looking for a top-notch salon experience. They truly know how to make you look and feel your best. Thank you again!
+                  <span><i class="fa-solid fa-quote-right fa-2x"></i></span>
+                </p>
+              
+            </div>
+         </div>
+            <!-- slide 4 -->
+          <div class="carousel-item active" >
+            <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="w-60 fst-italic">
+                  <span><i class="fa-solid fa-quote-left fa-2x"></i></span>
+I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accademy and it's about to complete. Name of the course is Professional Diploma in Beautician and Makeup. Which covers from basics to advanced learnings, technics & technologies. hands on experience using tools and equipments, we also learnt hydra-facials, Hair extensions, nail art, all are added advantages when doing course at Persona. Thank you Saritha mam, for giving us excellent learning experience in a hygienic, pleasant atmosphere and giving us opportunities to interact with your valued high profile customers.
+                  <span><i class="fa-solid fa-quote-right fa-2x"></i></span>
+                </p>
+               
+            </div>
+         </div>
+  </div>
+<button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <i class="fas fa-arrow-circle-left fa-3x text-secondary"></i>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <i class="fas fa-arrow-circle-right fa-3x text-secondary"></i>
+        </button>
+
+</div>
+           
+          </div>
+            
+        
+        <div class="row">
+           <div class="elfsight-app-a396197f-dc4a-4f70-8ead-1a86be1f7dc2" data-elfsight-app-lazy></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial end -->
+     <!-- WhatsApp button start -->
+  <a href="https://wa.me/+918095459035" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+    <!-- WhatsApp button end -->
+
+    <!-- footer start -->
+    <footer id="contact" class="footer mt-4 text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <address>
+              Visit us at: <br>
+              Mayil-Vahanam Forties
+              East Fort Mythan <br>
+              Near Indian Medical Association, <br>
+              Sultanpet <br>
+              Palakkad, Kerala <br>
+               India
+
+            </address>
+            <a href="tel:+14702267456">CLICK TO CALL</a>
+        
+          </div>
+          <div class="col-md-4">
+             <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/persona.b.3"><i class="fab fa-facebook fa-3x text-white"></i></a>
+              <a href="https://www.instagram.com/personabeautytouch/"><i class="fab fa-instagram fa-3x text-white"></i></a>
+              <a href="https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0"><i class="fab fa-youtube fa-3x text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    
+  
+  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+     <script src="js/glider.min.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+     <!-- <script>
+      const testimonial_config = {
+  draggable: true,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  scrollLock: true,
+  dots: "#dots",
+  arrows: {
+    prev: ".glider-prev",
+    next: ".glider-next",
+  },
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 2,
+        slidesToScroll: "auto",
+        itemWidth: 150,
+        duration: 0.25,
+      },
+    },
+    {
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25,
+      },
+    },
+  ],
+};
+console.log("testimonial gider object creation");
+console.log("testimonial gider object creation");
+var glide = new Glider(document.querySelector(".glider"), testimonial_config);
+
+console.log(glide);
+    </script> -->
+  </body>
+</html>
