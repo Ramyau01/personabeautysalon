@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
 .navbar {
   transition: all 0.5s ease-in-out;
   box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.16),
@@ -57,29 +60,63 @@
 .hero-text {
   text-shadow: 5px 5px 10px black;
 }
+
 //service
-// .card {
-//   animation: myAnim 2s ease 0s 2 normal forwards;
-// }
-// @keyframes myAnim {
-//   0% {
-//     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-//     transform: scale(1);
-//   }
+.modal-card {
+  animation: myAnim 2s ease 0s 2 normal forwards;
+  // transition: all 0.3s linear;
+}
+@keyframes myAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1);
+  }
+}
+.card {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
 
-//   100% {
-//     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-//     transform: scale(1.1);
-//   }
-// }
-// .card:hover {
-//   background-color: #ca5146;
-//   border: 1px solid #ca5146;
-//   cursor: pointer;
-// }
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  // top: -4px;
+  border: 1px solid #cccccc;
+  background-color: var(--bs-info);
 
+  cursor: pointer;
+}
+//about
+#about img {
+  height: 500px;
+  max-width: 360px;
+}
+//gallery
 .portfolio-container {
   height: 500px;
+}
+.photo-container {
+  margin-right: 0.25rem;
+}
+
+//testimonial
+.carousel-control-next {
+  right: -30px;
+  // top: 50%;
+}
+
+.carousel-control-prev {
+  left: -30px;
+  // top: 50%;
 }
 
 //whatsapp

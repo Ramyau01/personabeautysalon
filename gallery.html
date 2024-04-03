@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery-styles.css" />
+    <link rel="stylesheet" href="css/glider.css" />
+    <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
+    <title>Persona Bridal Studio</title>
+    <style>
+      * {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation starts -->
+    <nav
+      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-md sticky-top shadow-lg"
+    >
+      <div class="container-fluid">
+        <!-- icon & brand name -->
+        <a href="index.html" aria-current="page" class="navbar-brand">
+          <img src="images/logo.png" alt="logo" width="150" />
+        </a>
+        <!-- hamburger icon & nav-items-->
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler btn-outline-primary"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarNav">
+          <ul class="navbar-nav ms-5">
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:5500/index.html#about"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#about')"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:5500/index.html#services"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#services')"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:5500/index.html#portfolios"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#portfolios')"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:5500/index.html#testimonials"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#testimonials')"
+                >Testimonials</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                href="#appointment"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#appointment')"
+                >Appointment</a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a
+                href="http://127.0.0.1:5500/index.html#contact"
+                class="nav-link fw-semibold"
+                onclick="scrollToSection('#contact')"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation ends -->
+    <section id="photos" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+              <img
+                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/pexels-bhoopal-m-1446161.jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+          </div>
+          <!-- column 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+              <img
+                src="images/brides/pexels-brijesh-kamal-2119095 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+          </div>
+          <!-- column 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="image-container">
+              <img
+                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/pexels-deepak-naik-1516357 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
+                alt=""
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp button start -->
+    <a
+      href="https://wa.me/+918095459035"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- WhatsApp button end -->
+
+    <!-- footer start -->
+    <footer id="contact" class="footer mt-4 text-bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <address>
+              Visit us at: <br />
+              Mayil-Vahanam Forties East Fort Mythan <br />
+              Near Indian Medical Association, <br />
+              Sultanpet <br />
+              Palakkad, Kerala <br />
+              India
+            </address>
+            <a href="tel:+14702267456">CLICK TO CALL</a>
+          </div>
+          <div class="col-md-4">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
+                width="200"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect</h5>
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/persona.b.3"
+                ><i class="fab fa-facebook fa-3x text-white"></i
+              ></a>
+              <a href="https://www.instagram.com/personabeautytouch/"
+                ><i class="fab fa-instagram fa-3x text-white"></i
+              ></a>
+              <a
+                href="https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0"
+                ><i class="fab fa-youtube fa-3x text-white"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/glider.min.js"></script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

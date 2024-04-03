@@ -47,22 +47,27 @@
         <div class="collapse navbar-collapse ms-5" id="navbarNav">
           <ul class="navbar-nav ms-5">
             <li class="nav-item">
-              <a href="#about" class="nav-link fw-semibold">About</a>
+              <a href="#about" class="nav-link fw-semibold" onclick="scrollToSection('#about')">About</a>
             </li>
 
             <li class="nav-item">
-              <a href="#services" class="nav-link fw-semibold">Services</a>
+              <a href="#services" class="nav-link fw-semibold" onclick="scrollToSection('#services')">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolios" class="nav-link fw-semibold">Gallery</a>
+              <a href="#portfolios" class="nav-link fw-semibold" onclick="scrollToSection('#portfolios')">Gallery</a>
             </li>
             <li class="nav-item">
-              <a href="#testimonials" class="nav-link fw-semibold"
+              <a href="#testimonials" class="nav-link fw-semibold" onclick="scrollToSection('#testimonials')"
                 >Testimonials</a
               >
             </li>
+             <!-- <li class="nav-item">
+              <a href="#appointment" class="nav-link fw-semibold" onclick="scrollToSection('#appointment')"
+                >Appointment</a
+              >
+            </li> -->
             <li class="nav-item">
-              <a href="#contact" class="nav-link fw-semibold">Contact</a>
+              <a href="#contact" class="nav-link fw-semibold" onclick="scrollToSection('#contact')">Contact</a>
             </li>
           </ul>
         </div>
@@ -84,10 +89,10 @@
               </p>
 
               <div class="d-grid d-flex justify-content-center p-2">
-                <a href="#" class="btn btn-primary text-white me-3"
+                <a href="#services" class="btn btn-primary text-white me-3"
                   >Learn More</a
                 >
-                <a href="#" class="btn btn-primary text-white">Contact Us</a>
+                <a href="#contact" class="btn btn-primary text-white">Contact Us</a>
               </div>
             </div>
           </div>
@@ -97,14 +102,14 @@
     <!-- Hero end -->
 
  <!-- services start -->
-    <section id="services">
+    <section id="services" class="mb-5">
       <div class="container-l">
         <div class="row g-1">
           <div class="service-container col-md-6 col-lg-3">
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-1">
               <div class="image-container d-flex flex-row align-items-center">
                   <img src="images/icons/makeup.png" width="100px" alt="">
-                  <h4 class="card-title">Makeup</h4>
+                  <h3 class="h5 card-title">Makeup</h5>
               </div>
               <p class="card-text ms-4 pe-2">
                   Elevating your beauty from weddings to photoshoots, with premium makeup and personalized techniques to ensure you feel confident and stunning on your special day.
@@ -154,7 +159,7 @@
                       </li>
                     </ul>
 
-                    <div class="card mb-4 border-0 bg-info">
+                    <div class="modal-card mb-4 border-0 bg-info">
                       <div class="card-body p-3">
                         <h5 class="text-bg-info">Products We Use</h5>
                         <span class="badge text-white bg-primary">Revlon</span>
@@ -185,7 +190,7 @@
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-2">
               <div class="image-container d-flex flex-row align-items-center">
                                             <img src="images/icons/hair.png" width="100px" alt="">
-                                                          <h4 class="card-title">Hair Care</h4>
+                                                          <h3 class="h5 card-title">Hair Care</h3>
               </div>
 
                <p class="card-text ms-4 pe-2">
@@ -217,7 +222,7 @@
            <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>iTip Extensions </h5> This technique is ideal for adding length, volume, or highlights to specific areas of the hair, and they can be blended seamlessly with the natural hair.</li>
         </ul>
 
-                <div class="card mb-4 border-0 bg-info">
+                <div class="modal-card mb-4 border-0 bg-info">
   <div class="card-body p-3">
                     <h5 class="text-bg-info">Other Hair Care Services</h5>
     <span class="badge text-white bg-primary">Hair Cut & Styling</span>
@@ -244,7 +249,7 @@
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-3">
               <div class="image-container d-flex flex-row align-items-center">
                                             <img src="images/icons/beauty-treatment.png" width="100px" alt="">
-                                                          <h4 class="card-title">Skin Care</h4>
+                                                          <h3 class="h5 card-title">Skin Care</h3>
               </div>
 
                <p class="card-text ms-4 pe-2">
@@ -272,7 +277,7 @@
          
         </ul>
 
-                <div class="card mb-4 border-0 bg-info">
+                <div class="modal-card mb-4 border-0 bg-info">
   <div class="card-body p-3">
                     <h6 class="text-bg-info">Other Skin Care Services</h6>
     <span class="badge text-white bg-primary">Facials/Bleach</span>
@@ -298,7 +303,7 @@
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-4">
               <div class="image-container d-flex flex-row align-items-center">
                                             <img src="images/icons/education.png" width="100px" alt="">
-                                                          <h4 class="card-title">Beauty Course</h4>
+                                                          <h3 class="h5 card-title">Beauty Course</h3>
               </div>
 
                <p class="card-text ms-4 pe-2">
@@ -316,12 +321,38 @@
     </section>
     <!-- services end -->
 
+    <!-- About start -->
+    <section id="about" class="py-5">
+     <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+         <div class="image-container text-center">
+          <img src="images/saritha.jpeg" class="img-fluid w-100 shadow-1-strong rounded mb-4"alt="">
+         </div>
+  </div>
+  <div class="col-md-6">
+     <div class="text-container text-center">
+          <h4>Saritha Murali</h4>
+          <p>
+            Persona Bridal Studio is a manifestation of my childhood dream, a deep-rooted love for beauty, and unwavering dedication. 
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat harum dolor doloremque eius id cum quos eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia nesciunt saepe beatae accusantium fugit recusandae! Facilis dicta tempore, magnam sed nisi consequuntur iusto beatae perferendis, laborum similique quibusdam. Ad, voluptatum in. Cum maxime ad numquam at, nulla molestiae ratione earum. Earum cupiditate excepturi odio aspernatur voluptas culpa laboriosam nihil?
+          </p>
+         </div>
+  </div>
+        
+        </div>
+    
+     </div>
+    </section>
+    <!-- About end -->
+
+ <!-- gallery -->
     <!-- gallery start -->
-    <section id="portfolios" class="bg-light py-6">
+     <section id="portfolios" class="bg-info py-5">
       <div class="container h-100 px-5">
         <div class="row">
           <div class="col-md-8 offset-md-2 text-center">
-           <h2>Our Work</h2>
+            <h2 class="h2 pb-3 pb-md-3">Our Portfolio</h2>
           </div>
         </div>
         <div class="row d-flex align-items-center justify-content-center">
@@ -357,10 +388,14 @@
               <div role="tablist" class="glider-dots" id="dots"></div>
             </div>
           </div>
+
         </div>
-         <div class="row">
-          <div class="col-md-8 offset-md-2 text-center py-3">
-           <a href="gallery.html">See more of our work</a>
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center py-2">
+               <a href="gallery.html">See more of our work here</a>
+            </div>
+           
           </div>
         </div>
       </div>
@@ -368,13 +403,16 @@
 
     <!-- gallery ends -->
 
+
+
+
     <!-- Testimonial start -->
 
-    <section id="testimonials">
+    <section id="testimonials" class="pt-2">
       <div class="container-xl p-5">
         <div class="row">
           <div class="col-lg-8 offset-lg-2 text-center">
-            <h2> What Customers Have To Say</h2>
+            <h2 id="testimonials-header"> What Customers Have To Say</h2>
           </div>
            <div class="col-lg-8 offset-lg-2">
              <div id="testimonialCarousel" class="carousel slide p-5">
@@ -456,6 +494,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
     </section>
 
     <!-- Testimonial end -->
+
      <!-- WhatsApp button start -->
   <a href="https://wa.me/+918095459035" class="whatsapp-button" target="_blank">
     <i class="fab fa-whatsapp"></i>
@@ -484,7 +523,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
              <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
-                allowfullscreen
+                width="200"
               ></iframe>
             </div>
           </div>
@@ -501,55 +540,11 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
     </footer>
     <!-- footer end -->
 
-    
-  
-  
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
-     <script src="js/glider.min.js"></script>
+   <script src="js/glider.min.js"></script>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-     <!-- <script>
-      const testimonial_config = {
-  draggable: true,
-  slidesToScroll: 1,
-  slidesToShow: 1,
-  scrollLock: true,
-  dots: "#dots",
-  arrows: {
-    prev: ".glider-prev",
-    next: ".glider-next",
-  },
-  responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 775,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 2,
-        slidesToScroll: "auto",
-        itemWidth: 150,
-        duration: 0.25,
-      },
-    },
-    {
-      // screens greater than >= 1024px
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        itemWidth: 150,
-        duration: 0.25,
-      },
-    },
-  ],
-};
-console.log("testimonial gider object creation");
-console.log("testimonial gider object creation");
-var glide = new Glider(document.querySelector(".glider"), testimonial_config);
-
-console.log(glide);
-    </script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
