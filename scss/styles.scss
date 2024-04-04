@@ -20,7 +20,7 @@ html {
   height: 500px;
   // padding-top: 13rem;
   background: linear-gradient(rgba(60, 7, 7, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/header-background-mobile.webp");
+    url("../images/header-background-mobile-original.jpeg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-size: cover;
@@ -36,7 +36,7 @@ html {
     padding: 0px;
     height: calc(var(--vh, 1vh) * 70);
     background: linear-gradient(rgba(28, 1, 1, 0.6), rgba(0, 0, 0, 0.5)),
-      url("../images/header-background-compressed.png");
+      url("../images/header-large-compressed.jpeg");
     // height: 80vh;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -49,7 +49,7 @@ html {
     // padding-top: 10rem;
     height: calc(var(--vh, 1vh) * 80);
     background: linear-gradient(rgba(28, 1, 1, 0.6), rgba(0, 0, 0, 0.5)),
-      url("../images/header-background-compressed.png");
+      url("../images/header-large-compressed.jpeg");
     // height: 80vh;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -80,21 +80,24 @@ html {
     transform: scale(1);
   }
 }
-.card {
-  transform: scale(1);
-  transition: transform 0.3s ease;
+@media (min-width: 720px) {
+  .card {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    // top: -4px;
+    border: 1px solid #cccccc;
+    background-color: var(--bs-info);
+
+    cursor: pointer;
+  }
 }
 
-.card:hover {
-  transform: scale(1.1);
-  transition: all 0.1s ease-out;
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-  // top: -4px;
-  border: 1px solid #cccccc;
-  background-color: var(--bs-info);
-
-  cursor: pointer;
-}
 //about
 #about img {
   height: 500px;
