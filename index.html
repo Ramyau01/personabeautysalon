@@ -12,11 +12,11 @@
       media="print" 
       onload="this.onload=null;this.removeAttribute('media');"
     />
-    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
-     <link rel="stylesheet" href="css/glider.css" />
+     <link rel="stylesheet" href="css/glider.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
     <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
      <link rel="preload" fetchpriority="high" as="image" media="(min-width: 768px)" href="images/header-large-compressed.jpeg" />
      <link rel="preload" fetchpriority="high" as="image" href="images/header-background-mobile-original.jpeg" />
@@ -26,6 +26,11 @@
    <script defer src="js/glider.min.js"></script>
     <script defer src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <script defer src="js/script.js"></script>
+    <noscript>
+    <link rel="stylesheet" href="css/glider.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
+</noscript>
     <!-- <style>
       * {
         border: 1px solid red;
@@ -46,6 +51,7 @@
         <!-- hamburger icon & nav-items-->
         <button
           type="button"
+          id="toggleButton"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           class="navbar-toggler btn-outline-primary"
@@ -143,7 +149,7 @@
                       <li class="list-group-item">
                         <h5>
                           <span class="me-1">
-                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                            <img src="images/icons/list-bullet.png" alt="point one" width="40" loading="lazy">
                           </span>
                           HD Makeup
                        </h5>
@@ -152,7 +158,7 @@
                       <li class="list-group-item">
                         <h5>
                           <span class="me-1">
-                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                            <img src="images/icons/list-bullet.png" alt="point 2" loading="lazy" width="40">
                           </span>
                           4K Makeup 
                         </h5>
@@ -162,7 +168,7 @@
                       <li class="list-group-item">
                         <h5>
                           <span class="me-1">
-                            <img src="images/icons/list-bullet.png" alt="" width="40">
+                            <img src="images/icons/list-bullet.png" alt="point 3" loading="lazy" width="40">
                           </span>
                           Airbrush Makeup 
                         </h5>
@@ -200,7 +206,7 @@
             <div class="service-container col-md-6 col-lg-3">
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-2">
               <div class="image-container d-flex flex-row align-items-center">
-                                            <img src="images/icons/hair.png" width="100px" alt="">
+                                            <img src="images/icons/hair.png" width="100px" loading="lazy" alt="hair care icon">
                                                           <h3 class="h5 card-title">Hair Care</h3>
               </div>
 
@@ -226,11 +232,11 @@
         <ul class="list-unstyled list-group list-group-flush mb-5">
           <li class="list-group-item">
 
-            <h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>Nano Keratin Treatment </h5>
+            <h5><span class="me-1"><img src="images/icons/list-bullet.png" loading="lazy" alt="point one" width="40"></span>Nano Keratin Treatment </h5>
             This hair treatment reduce frizz, add shine, and improve the overall condition of the hair without using harsh chemicals.
           </li>
-           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>Weft Extensions </h5>This technique enhance your hair's appearance by adding length, volume or experiment with different styles without the commitment of permanent extensions. It can cover larger area of the scalp</li>
-           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>iTip Extensions </h5> This technique is ideal for adding length, volume, or highlights to specific areas of the hair, and they can be blended seamlessly with the natural hair.</li>
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="point two" loading="lazy" width="40"></span>Weft Extensions </h5>This technique enhance your hair's appearance by adding length, volume or experiment with different styles without the commitment of permanent extensions. It can cover larger area of the scalp</li>
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="point three" loading="lazy" width="40"></span>iTip Extensions </h5> This technique is ideal for adding length, volume, or highlights to specific areas of the hair, and they can be blended seamlessly with the natural hair.</li>
         </ul>
 
                 <div class="modal-card mb-4 border-0 bg-info">
@@ -259,7 +265,7 @@
             <div class="service-container col-md-6 col-lg-3">
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-3">
               <div class="image-container d-flex flex-row align-items-center">
-                                            <img src="images/icons/beauty-treatment.png" width="100px" alt="">
+                                            <img src="images/icons/beauty-treatment.png" width="100px" loading="lazy" alt="skin care icon">
                                                           <h3 class="h5 card-title">Skin Care</h3>
               </div>
 
@@ -284,7 +290,7 @@
         <h5 class="h5 text-secondary">Our Signature Skin Care Treatments</h5>
         <ul class="list-unstyled list-group list-group-flush mb-5">
   
-           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="" width="40"></span>HydraFacial</h5>Its a non-invasive skincare treatment that combines exfoliation, extraction, hydration, and antioxidant protection simultaneously, resulting in clearer, more hydrated, and younger-looking skin. </li>
+           <li class="list-group-item"><h5><span class="me-1"><img src="images/icons/list-bullet.png" alt="point one" loading="lazy" width="40"></span>HydraFacial</h5>Its a non-invasive skincare treatment that combines exfoliation, extraction, hydration, and antioxidant protection simultaneously, resulting in clearer, more hydrated, and younger-looking skin. </li>
          
         </ul>
 
@@ -313,7 +319,7 @@
                         <div class="service-container col-md-6 col-lg-3">
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-4">
               <div class="image-container d-flex flex-row align-items-center">
-                                            <img src="images/icons/education.png" width="100px" alt="">
+                                            <img src="images/icons/education.png" width="100px" loading="lazy" alt="Beauty Course">
                                                           <h3 class="h5 card-title">Beauty Course</h3>
               </div>
 
@@ -338,7 +344,7 @@
       <div class="row">
         <div class="col-md-6">
          <div class="image-container text-center">
-          <img src="images/saritha.jpeg" class="img-fluid w-100 shadow-1-strong rounded mb-4"alt="">
+          <img src="images/saritha.jpeg" loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4"alt="Owner's photo">
          </div>
   </div>
   <div class="col-md-6">
@@ -371,23 +377,23 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat har
             <div class="glider-contain multiple" data-glider-options="{&quot;gap&quot;: 20}">
               <div class="glider">
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-eternal-slayer-17910669.jpeg" alt="bride photo" class="photo img-fluid">
+                 <img src="images/brides/pexels-eternal-slayer-17910669.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
                 </div>
                 <!-- 2 -->
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-farddin-protik-2106685.jpeg" alt="bride photo" class="photo img-fluid">
+                 <img src="images/brides/pexels-farddin-protik-2106685.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
                 </div>
                 <!-- 3 -->
                <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-nripen-kumar-roy-725462.jpeg" alt="bride photo" class="photo img-fluid" >
+                 <img src="images/brides/pexels-nripen-kumar-roy-725462.jpeg" alt="bride photo"loading="lazy"  class="photo img-fluid" >
                 </div>
                 <!-- 4 -->
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-skg-photography-2053852.jpeg" alt="bride photo" class="photo img-fluid">
+                 <img src="images/brides/pexels-skg-photography-2053852.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
                 </div>
                 <!-- 5 -->
                 <div class="photo-container  text-center rounded-5">
-                 <img src="images/brides/pexels-ritam-das-9901792.jpeg" alt="" class="photo img-fluid">
+                 <img src="images/brides/pexels-ritam-das-9901792.jpeg" alt="bride's photo" loading="lazy" class="photo img-fluid">
                 </div>
               </div>
               <button aria-label="Previous" class="glider-prev">
@@ -426,8 +432,8 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat har
             <h2 id="testimonials-header"> What Customers Have To Say</h2>
           </div>
            <div class="col-lg-8 offset-lg-2">
-             <div id="testimonialCarousel" class="carousel slide pt-5 px-5">
-        <div class="carousel-inner">
+             <div id="testimonialCarousel" class="carousel slide pt-5">
+        <div class="carousel-inner" style="width: 300px;height: 500px; overflow-y: auto;">
        
                    <!-- slide 1 -->
           <div class="carousel-item">
