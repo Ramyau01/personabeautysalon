@@ -15,23 +15,24 @@
 // window.addEventListener("DOMContentLoaded", userScroll);
 
 // document.addEventListener("touchstart", onTouchStart, { passive: true });
+document.addEventListener("DOMContentLoaded", function () {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-$(document).ready(function () {
-  $("#service-card-1").click(function () {
-    $("#serviceModal1").modal("show");
+  $(document).ready(function () {
+    $("#service-card-1").click(function () {
+      $("#serviceModal1").modal("show");
+    });
   });
-});
-$(document).ready(function () {
-  $("#service-card-2").click(function () {
-    $("#serviceModal2").modal("show");
+  $(document).ready(function () {
+    $("#service-card-2").click(function () {
+      $("#serviceModal2").modal("show");
+    });
   });
-});
-$(document).ready(function () {
-  $("#service-card-3").click(function () {
-    $("#serviceModal3").modal("show");
+  $(document).ready(function () {
+    $("#service-card-3").click(function () {
+      $("#serviceModal3").modal("show");
+    });
   });
 });
 
