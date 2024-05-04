@@ -21,32 +21,29 @@
      <link rel="preload" fetchpriority="high" as="image" media="(min-width: 768px)" href="images/header-large-compressed.jpeg" />
      <link rel="preload" fetchpriority="high" as="image" href="images/header-background-mobile-original.jpeg" />
     <title>Persona Bridal Studio</title>
-     <script defer src="js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script defer src="js/glider.min.js"></script>
-    <script defer src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <script defer src="js/script.js"></script>
+      <script defer src="js/glider.min.js"></script>
+      <script defer src="js/script.js"></script>
+      <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script defer src="js/bootstrap.bundle.min.js"></script>
+      <script defer src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
     <noscript>
     <link rel="stylesheet" href="css/glider.css">
     <link rel="stylesheet" href="css/fontawesome.css">
 
 </noscript>
-    <!-- <style>
-      * {
-        border: 1px solid red;
-      }
-    </style> -->
+
   </head>
   <body>
     <!-- navigation starts -->
     <nav
-      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-md sticky-top shadow-lg"
+      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-lg sticky-top shadow-lg"
     >
       <div class="container-fluid">
         <!-- icon & brand name -->
         <a href="index.html" aria-current="page" class="navbar-brand">
           <!-- <img src="images/logo.png" alt="logo" width="150" /> -->
-          <img src="images/logo.svg" alt="logo" width="150" />
+          <img src="images/persona logo.png" alt="logo" width="180" height = "50" />
         </a>
         <!-- hamburger icon & nav-items-->
         <button
@@ -61,21 +58,20 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ms-5" id="navbarNav">
-          <ul class="navbar-nav ms-5">
-            <li class="nav-item">
-              <a href="#about" class="nav-link fw-semibold" onclick="scrollToSection('#about')">About</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-4">
+              <a href="#about" class="nav-link fw-semibold">About</a>
             </li>
 
-            <li class="nav-item">
-              <a href="#services" class="nav-link fw-semibold" onclick="scrollToSection('#services')">Services</a>
+            <li class="nav-item px-4">
+              <a href="#services" class="nav-link fw-semibold">Services</a>
             </li>
-            <li class="nav-item">
-              <a href="#portfolios" class="nav-link fw-semibold" onclick="scrollToSection('#portfolios')">Gallery</a>
+            <li class="nav-item px-4">
+              <a href="#portfolios" class="nav-link fw-semibold" >Gallery</a>
             </li>
-            <li class="nav-item">
-              <a href="#testimonials" class="nav-link fw-semibold" onclick="scrollToSection('#testimonials')"
-                >Testimonials</a
+            <li class="nav-item px-4">
+              <a href="#testimonials" class="nav-link fw-semibold" >Testimonials</a
               >
             </li>
              <!-- <li class="nav-item">
@@ -83,8 +79,8 @@
                 >Appointment</a
               >
             </li> -->
-            <li class="nav-item">
-              <a href="#contact" class="nav-link fw-semibold" onclick="scrollToSection('#contact')">Contact</a>
+            <li class="nav-item px-4">
+              <a href="#contact" class="nav-link fw-semibold">Contact</a>
             </li>
           </ul>
         </div>
@@ -96,7 +92,7 @@
     <header class="header position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 offset-md-4">
+          <div class="col-lg-8 offset-lg-4">
             <div class="hero-container mb-5">
               <h1 class="fw-bold mt-5 text-white text-center hero-text">
                 Persona Beauty Touch Studio
@@ -106,22 +102,30 @@
               </p>
 
               <div class="d-grid d-flex justify-content-center p-2">
-                <a href="#services" class="d-none d-md-blockbtn btn-primary text-white me-3"
+                <a href="#services" class="d-none d-md-block btn btn-light btn-outline-warning text-dark fw-bold me-3"
                   >Learn More</a
                 >
-                <a href="#contact" class="btn btn-primary text-white">Contact Us</a>
+                <a href="tel:+919037541942" class="btn btn-warning text-dark fw-bold">Contact Us
+                 
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </header>
     <!-- Hero end -->
 
  <!-- services start -->
-    <section id="services" class="mb-5">
-      <div class="container-l">
-        <div class="row g-1">
+    <section id="services" class="pt-lg-6 bg-lg-warning">
+      <div class="container-xl">
+        <div class="row d-none d-lg-block pt-2">
+         <div class="col-lg-8 offset-lg-2 text-center">
+          <h2>Explore Our Range Of Services</h2>
+         </div>
+        </div>
+        <div class="row g-1 pt-lg-3">
           <div class="service-container col-md-6 col-lg-3">
             <div class="card h-100 p-3 p-md-0 rounded-0 shadow-lg border-0" id="service-card-1">
               <div class="image-container d-flex flex-row align-items-center">
@@ -188,12 +192,12 @@
                     </div>
       
                     <div>
-                      <a href="#portfolios" class="mb-4" >Explore Our Work</a>
+                      <a href="#portfolios" class="modal-link mb-4 text-dark">Explore Our Work</a>
                     </div>
      
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Contact</button>
+                    <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
@@ -254,7 +258,7 @@
       </div>
       <div class="modal-footer">
 
-        <button type="button" class="btn btn-primary">Contact</button>
+        <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
@@ -307,7 +311,7 @@
       </div>
       <div class="modal-footer">
 
-        <button type="button" class="btn btn-primary">Contact</button>
+         <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
@@ -339,20 +343,27 @@
     <!-- services end -->
 
     <!-- About start -->
-    <section id="about" class="py-5">
-     <div class="container">
+    <section id="about" class="pt-lg-6">
+     <div class="container py-lg-5">
       <div class="row">
         <div class="col-md-6">
-         <div class="image-container text-center">
-          <img src="images/saritha.jpeg" loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4"alt="Owner's photo">
+         <div class="image-container text-center mb-3">
+          <img 
+          srcset="images/saritha-360w.jpeg 360w"
+          sizes="(min-width: 768px) 360px, calc(100vw - 50px)"
+          src="images/saritha-277w.jpeg"
+          loading="lazy" 
+          class="img-fluid h-100 shadow-1-strong rounded mb-4"
+          alt="Image of Saritha Murali, the owner of the studio"
+          >
          </div>
   </div>
   <div class="col-md-6">
-     <div class="text-container text-center">
-          <h4>Saritha Murali</h4>
+     <div class="text-container text-center pt-3">
+          <h2 class="mb-4">Saritha Murali</h2>
           <p>
-            Persona Bridal Studio is a manifestation of my childhood dream, a deep-rooted love for beauty, and unwavering dedication. 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat harum dolor doloremque eius id cum quos eligendi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia nesciunt saepe beatae accusantium fugit recusandae! Facilis dicta tempore, magnam sed nisi consequuntur iusto beatae perferendis, laborum similique quibusdam. Ad, voluptatum in. Cum maxime ad numquam at, nulla molestiae ratione earum. Earum cupiditate excepturi odio aspernatur voluptas culpa laboriosam nihil?
+            Persona Bridal Studio is a manifestation of my childhood dream, a deep-rooted love for beauty, and unwavering dedication. provides on-location bridal hair and makeup services in the tri-state area and worldwide. We also offer a luxury bridal suite rental in East Northport, for the ultimate wedding day glam party. ​Our emphasis on quality, talent, and customization, alongside our compromising passion, is what continues to differentiate us from other hair and makeup artists.​​ We take pride in being able to continuously provide the most pampered experience to all of our clients.​
+
           </p>
          </div>
   </div>
@@ -365,35 +376,39 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat har
 
  <!-- gallery -->
     <!-- gallery start -->
-     <section id="portfolios" class="bg-info py-5">
-      <div class="container h-100 px-5">
+     <section id="portfolios" class="bg-info pt-lg-6 pb-lg-5">
+      <div class="container-xl h-100 px-5">
         <div class="row">
-          <div class="col-md-8 offset-md-2 text-center">
-            <h2 class="h2 pb-3 pb-md-3">Our Portfolio</h2>
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <h2 class="pt-3">Our Portfolio</h2>
           </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center pt-lg-3">
           <div class="col-12">
             <div class="glider-contain multiple" data-glider-options="{&quot;gap&quot;: 20}">
               <div class="glider">
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-eternal-slayer-17910669.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
+                 <img src="images/brides/IMG-20221206-WA0012.jpg" alt="bride photo" loading="lazy" class="photo img-fluid shadow-1-strong rounded">
                 </div>
                 <!-- 2 -->
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-farddin-protik-2106685.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
+                 <img src="images/brides/AA03.jpg" alt="bride photo" loading="lazy" class="photo img-fluid shadow-1-strong rounded">
                 </div>
                 <!-- 3 -->
                <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-nripen-kumar-roy-725462.jpeg" alt="bride photo"loading="lazy"  class="photo img-fluid" >
+                 <img src="images/brides/IMG-20221013-WA0010.jpg" alt="bride photo"loading="lazy"  class="photo img-fluid shadow-1-strong rounded" >
                 </div>
                 <!-- 4 -->
                 <div class="photo-container text-center rounded-5">
-                 <img src="images/brides/pexels-skg-photography-2053852.jpeg" alt="bride photo" loading="lazy" class="photo img-fluid">
+                 <img src="images/brides/IMG-20230506-WA0029.jpg" alt="bride photo" loading="lazy" class="photo img-fluid shadow-1-strong rounded">
                 </div>
                 <!-- 5 -->
                 <div class="photo-container  text-center rounded-5">
-                 <img src="images/brides/pexels-ritam-das-9901792.jpeg" alt="bride's photo" loading="lazy" class="photo img-fluid">
+                 <img src="images/brides/IMG-20230103-WA0030.jpg" alt="bride's photo" loading="lazy" class="photo img-fluid shadow-1-strong rounded">
+                </div>
+                <!-- 6 -->
+                <div class="photo-container  text-center rounded-5">
+                 <img src="images/brides/IMG-20221122-WA0035.jpg" alt="bride's photo" loading="lazy" class="photo img-fluid shadow-1-strong rounded">
                 </div>
               </div>
               <button aria-label="Previous" class="glider-prev">
@@ -410,7 +425,7 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat har
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="text-center py-2">
-               <a href="gallery.html" >See more of our work here</a>
+               <a href="gallery.html" class="text-dark">See more of our work here</a>
             </div>
            
           </div>
@@ -425,15 +440,15 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam ut at fugiat har
 
     <!-- Testimonial start -->
 
-    <section id="testimonials" class="pt-2">
+    <section id="testimonials" class="pt-lg-6 bg-lg-warning">
       <div class="container-xl">
-        <div class="row p-5">
+        <div class="row">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 id="testimonials-header"> What Customers Have To Say</h2>
           </div>
            <div class="col-lg-8 offset-lg-2">
-             <div id="testimonialCarousel" class="carousel slide pt-5 d-flex flex-row justify-content-center">
-        <div class="carousel-inner" style="width: 300px;height: 500px; overflow-y: auto;">
+             <div id="testimonialCarousel" class="carousel slide pt-3 d-flex flex-row justify-content-center">
+        <div class="carousel-inner" style="width: 400px;height: 500px; overflow-y: auto;">
        
                    <!-- slide 1 -->
           <div class="carousel-item">
@@ -481,8 +496,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
                
             </div>
          </div>
-  </div>
-<button
+         <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#testimonialCarousel"
@@ -490,7 +504,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
         >
           <i class="fas fa-arrow-circle-left fa-3x text-secondary"></i>
         </button>
-        <button
+                <button
           class="carousel-control-next"
           type="button"
           data-bs-target="#testimonialCarousel"
@@ -498,27 +512,26 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
         >
           <i class="fas fa-arrow-circle-right fa-3x text-secondary"></i>
         </button>
-
+  </div>
 </div>
-           
-          </div>
-            
-        
+ </div>
       
       </div>
-        <div class="row">
+       <div class="row">
            <div class="elfsight-app-a396197f-dc4a-4f70-8ead-1a86be1f7dc2" data-elfsight-app-lazy></div>
         </div>
+
       </div>
     </section>
 
     <!-- Testimonial end -->
-
-     <!-- WhatsApp button start -->
-  <a href="https://wa.me/+918095459035" class="whatsapp-button" target="_blank">
+      <!-- WhatsApp button start -->
+  <a href="https://wa.me/+919037541942" class="whatsapp-button" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
     <!-- WhatsApp button end -->
+
+
 
     <!-- footer start -->
     <footer id="contact" class="footer mt-4 text-bg-dark py-5">
@@ -535,15 +548,15 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
                India
 
             </address>
-            <a href="tel:+14702267456">CLICK TO CALL</a>
+            <a href="tel:+919037541942">CLICK TO CALL</a>
         
           </div>
           <div class="col-md-4">
              <div class="map">
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
                 width="200"
-              ></iframe>
+              ></iframe> -->
             </div>
           </div>
           <div class="col-md-4">

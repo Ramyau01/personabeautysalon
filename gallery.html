@@ -26,16 +26,23 @@
   <body>
     <!-- navigation starts -->
     <nav
-      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-md sticky-top shadow-lg"
+      class="navbar navbar-dark bg-dark bg-sm-dark navbar-expand-lg sticky-top shadow-lg"
     >
       <div class="container-fluid">
         <!-- icon & brand name -->
         <a href="index.html" aria-current="page" class="navbar-brand">
-          <img src="images/logo.png" alt="logo" width="150" />
+          <!-- <img src="images/logo.png" alt="logo" width="150" /> -->
+          <img
+            src="images/persona logo.png"
+            alt="logo"
+            width="180"
+            height="50"
+          />
         </a>
         <!-- hamburger icon & nav-items-->
         <button
           type="button"
+          id="toggleButton"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           class="navbar-toggler btn-outline-primary"
@@ -45,52 +52,49 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ms-5" id="navbarNav">
-          <ul class="navbar-nav ms-5">
-            <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-4">
               <a
-                href="http://127.0.0.1:5500/index.html#about"
+                href="index.html#about"
                 class="nav-link fw-semibold"
                 onclick="scrollToSection('#about')"
                 >About</a
               >
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item px-4">
               <a
-                href="http://127.0.0.1:5500/index.html#services"
+                href="index.html#services"
                 class="nav-link fw-semibold"
                 onclick="scrollToSection('#services')"
                 >Services</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4">
               <a
-                href="http://127.0.0.1:5500/index.html#portfolios"
+                href="index.html#portfolios"
                 class="nav-link fw-semibold"
                 onclick="scrollToSection('#portfolios')"
                 >Gallery</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-4">
               <a
-                href="http://127.0.0.1:5500/index.html#testimonials"
+                href="index.html#testimonials"
                 class="nav-link fw-semibold"
                 onclick="scrollToSection('#testimonials')"
                 >Testimonials</a
               >
             </li>
             <!-- <li class="nav-item">
-              <a
-                href="#appointment"
-                class="nav-link fw-semibold"
-                onclick="scrollToSection('#appointment')"
+              <a href="#appointment" class="nav-link fw-semibold" onclick="scrollToSection('#appointment')"
                 >Appointment</a
               >
             </li> -->
-            <li class="nav-item">
+            <li class="nav-item px-4">
               <a
-                href="http://127.0.0.1:5500/index.html#contact"
+                href="#contact"
                 class="nav-link fw-semibold"
                 onclick="scrollToSection('#contact')"
                 >Contact</a
@@ -101,55 +105,123 @@
       </div>
     </nav>
     <!-- navigation ends -->
-    <section id="photos" class="mt-5">
-      <div class="container">
+    <section id="photos" class="bg-info">
+      <div class="container p-5">
         <div class="row">
           <!-- column 1 -->
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="image-container">
               <img
-                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
-                alt=""
+                src="images/brides/20240128_073639.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="images/brides/IMG-20221013-WA0010.jpg"
+                alt="Bridal makeup photo"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="images/brides/IMG-20221128-WA0011.jpg"
+                alt="Bridal makeup photo"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
-                src="images/brides/pexels-bhoopal-m-1446161.jpg"
-                alt=""
+                src="images/brides/IMG-20230118-WA0009.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20230506-WA0029.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20231205-WA0058 (1).jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20240208-WA0013.jpg"
+                alt="bridal makeup pictures"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
             </div>
           </div>
           <!-- column 2 -->
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="image-container">
               <img
-                src="images/brides/pexels-brijesh-kamal-2119095 (1).jpg"
-                alt=""
+                src="images/brides/20240108_175808.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="images/brides/IMG-20221122-WA0035.jpg"
+                alt="Bridal makeup photo"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="images/brides/IMG-20221206-WA0012.jpg"
+                alt="Bridal makeup photo"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
-                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
-                alt=""
+                src="images/brides/IMG-20230424-WA0026.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20230518-WA0021.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20231207-WA0094.jpg"
+                alt="bridal makeup pictures"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
             </div>
           </div>
           <!-- column 3 -->
-          <div class="col-sm-6 col-md-4">
+          <div class="col-6 col-sm-4 col-md-4">
             <div class="image-container">
               <img
-                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
-                alt=""
+                src="images/brides/Screenshot_20240202_115533_Instagram.jpg"
+                alt="bridal makeup pictures"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
-                src="images/brides/pexels-deepak-naik-1516357 (1).jpg"
-                alt=""
+                src="images/brides/IMG-20221123-WA0031.jpg"
+                alt="Bridal makeup photo"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
-                src="images/brides/pexels-manjeet-singh-yadav-1162983 (1).jpg"
-                alt=""
+                src="images/brides/IMG-20231229-WA0075.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/8.jpg"
+                alt="bridal makeup pictures"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20230103-WA0030.jpg"
+                alt="Bridal makeup photo"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="images/brides/IMG-20231005-WA0038.jpg"
+                alt="bridal makeup pictures"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
             </div>

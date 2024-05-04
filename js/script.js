@@ -1,20 +1,3 @@
-// function userScroll() {
-//   const navbar = document.querySelector(".navbar");
-
-//   window.addEventListener("scroll", () => {
-//     if (window.scrollY > 50) {
-//       navbar.classList.add("bg-dark");
-//       navbar.classList.add("navbar-sticky");
-//     } else {
-//       navbar.classList.remove("bg-dark");
-//       navbar.classList.remove("navbar-sticky");
-//     }
-//   });
-// }
-
-// window.addEventListener("DOMContentLoaded", userScroll);
-
-// document.addEventListener("touchstart", onTouchStart, { passive: true });
 function toggleNavbar() {
   var navbar = document.getElementById("navbarNav");
   if (navbar.style.display === "flex") {
@@ -54,17 +37,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.querySelectorAll(".service-btn").forEach(function (button) {
-  button.addEventListener("click", function () {
-    var targetModalId = button.getAttribute("data-bs-target");
-    var targetModal = document.querySelector(targetModalId);
-    var modal = new bootstrap.Modal(targetModal);
-    modal.show();
-    // When modal is hidden, force remove the modal backdrop
-    targetModal.addEventListener("hidden.bs.modal", function () {
-      document.querySelector(".modal-backdrop").remove();
+// document.querySelectorAll(".service-btn").forEach(function (button) {
+//   button.addEventListener("click", function () {
+//     var targetModalId = button.getAttribute("data-bs-target");
+//     var targetModal = document.querySelector(targetModalId);
+//     var modal = new bootstrap.Modal(targetModal);
+//     modal.show();
+//     // When modal is hidden, force remove the modal backdrop
+//     targetModal.addEventListener("hidden.bs.modal", function () {
+//       document.querySelector(".modal-backdrop").remove();
+//     });
+//   });
+// });
+
+//modal close functionality
+document.addEventListener("DOMContentLoaded", function () {
+  let currentModal = document.querySelector(".modal");
+  if (currentModal) {
+    // Check if modal exists
+    currentModal.addEventListener("click", function (event) {
+      if (event.target.classList.contains("modal-link")) {
+        event.preventDefault(); // Prevent default link behavior
+        let modalInstance = bootstrap.Modal.getInstance(currentModal);
+        if (modalInstance) {
+          // Check if modal instance exists
+          let linkedContent = event.target.getAttribute("href");
+          modalInstance.hide(); // Close the modal
+          let targetElement = document.querySelector(linkedContent);
+          if (targetElement) {
+            //delay the scroll
+            setTimeout(function () {
+              targetElement.scrollIntoView({ behavior: "smooth" }); // Scroll to target section
+            }, 300);
+          }
+        }
+      }
     });
-  });
+  }
 });
 
 var glider = new Glider(document.querySelector(".glider"), {
@@ -107,15 +116,3 @@ document
   .addEventListener("glider-loaded", function (event) {
     glider.refresh(true);
   });
-
-function scrollToSection(sectionId) {
-  var section = document.querySelector(sectionId);
-  console.log(section);
-  if (section) {
-    console.log(section.offsetTop);
-    console.log(document.querySelector("nav").offsetHeight);
-    // var offset = section.offsetTop - document.querySelector("nav").offsetHeight;
-    var offset = section.offsetTop;
-    window.scrollTo(0, offset);
-  }
-}
