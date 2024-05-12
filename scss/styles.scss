@@ -31,7 +31,8 @@ article {
 // header
 //mobile
 .header {
-  height: 500px;
+  // height: 500px;
+  height: calc(100vh - 5.69rem);
   background: linear-gradient(rgba(60, 7, 7, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/header-background-mobile-original.jpeg");
   background-repeat: no-repeat;
@@ -96,6 +97,18 @@ article {
 }
 
 //service
+
+// .service-container {
+//   max-width: 400px;
+//   max-height: 300px;
+// }
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
 .modal-card {
   animation: myAnim 2s ease 0s 2 normal forwards;
   // transition: all 0.3s linear;

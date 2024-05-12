@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
     />
-    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome.css"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+    />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <link rel="stylesheet" href="css/gallery-styles.css" />
-    <!-- <link rel="stylesheet" href="css/glider.css" /> -->
+
     <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
     <title>Persona Bridal Studio</title>
     <!-- <style>
@@ -105,146 +113,190 @@
       </div>
     </nav>
     <!-- navigation ends -->
-    <section id="photos" class="bg-info">
+    <section id="photos">
       <div class="container p-5">
         <div class="row">
-          <!-- column 1 -->
-          <div class="col-6 col-sm-4 col-md-4">
-            <div class="image-container">
-              <img
-                src="images/brides/20240128_073639.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                src="images/brides/IMG-20221013-WA0010.jpg"
-                alt="Bridal makeup photo"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                src="images/brides/IMG-20221128-WA0011.jpg"
-                alt="Bridal makeup photo"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20230118-WA0009.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20230506-WA0029.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20231205-WA0058 (1).jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20240208-WA0013.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
+          <!-- column 1   calc((25vw - 10.5rem) / 4) -->
+          <div class="col-6 col-sm-3 col-md-3">
+            <!-- purple bride start -->
+            <img
+            
+              srcset=" images/brides/20240128_073639_w_200.jpg 200w,
+              images/brides/20240128_073639_w_309.jpg 309w,
+              images/brides/20240128_073639_w_360.jpg 360w"
+               sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/20240128_073639_w_309.jpg"
+              alt="bride wearing purple saree & makeup done by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+ >
+   <!-- purple bride end -->
+   <!-- green bride start -->
+           <!-- <img
+            
+              srcset="images/brides/20221013_w_200.jpg 200w,
+              images/brides/20221013_w_398.jpg 398w,
+              images/brides/20221013_w_480.jpg 480w"
+               sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/20221013_w_200.jpg"
+              alt="bride wearing green saree and makeup done by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+ > -->
+
+   <img
+            
+              srcset="images/brides/resized-WA0010.jpg 200w,
+              images/brides/20221013_w_398.jpg 398w,
+              images/brides/20221013_w_480.jpg 480w"
+               sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/resized-WA0010.jpg"
+              alt="bride wearing green saree and makeup done by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+ >
+    <!-- green bride end -->
+
+            <!-- <img
+              src="images/brides/IMG-20221013-WA0010.jpg"
+              alt="Bridal makeup photo"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            /> -->
+<!-- yellow bride start -->
+            <img
+             srcset="images/brides/IMG-20221128-WA0011_427.jpg 427w,
+              images/brides/IMG-20221128-WA0011_213.jpg 213w"
+              sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/IMG-20221128-WA0011_213.jpg"
+              alt="Bride dressed in yellow saree and blue ornaments for her reception. Makeup dont by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+            <!-- yellow bride end -->
+            <!-- red bride start -->
+            <img
+              srcset="images/brides/IMG-20230118-WA0009_240.jpg 240w,
+             images/brides/IMG-20230118-WA0009_480.jpg 480w"
+              sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/IMG-20230118-WA0009_240.jpg"
+              alt="beautiful kerala bride wearing a red saree"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+             <!-- red bride end -->
+           
+         
           </div>
           <!-- column 2 -->
-          <div class="col-6 col-sm-4 col-md-4">
-            <div class="image-container">
-              <img
-                src="images/brides/20240108_175808.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                src="images/brides/IMG-20221122-WA0035.jpg"
-                alt="Bridal makeup photo"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
-            <div class="image-container">
-              <img
-                src="images/brides/IMG-20221206-WA0012.jpg"
-                alt="Bridal makeup photo"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20230424-WA0026.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20230518-WA0021.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-              <img
-                src="images/brides/IMG-20231207-WA0094.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
-            </div>
+          <div class="col-6 col-sm-3 col-md-3">
+                <!-- grey bride start -->
+            <img
+       
+              src="images/brides/20240108_175808.jpg"
+              alt="bride wearing gown for her wedding reception"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+                <!-- grey bride end -->
+
+           <!-- teal green bride start -->
+          
+            <img
+                   srcset="images/brides/IMG-20230424-WA0026_240.jpg 240w,
+            images/brides/IMG-20230424-WA0026_288.jpg 288w"
+              sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/IMG-20230424-WA0026_240.jpg"
+              alt="bridal makeup pictures"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+              <!-- teal green bride end -->
+              <!-- magenta bride start -->
+            <img
+              src="images/brides/IMG-20230518-WA0021.jpg"
+              alt="engagement makeup done by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+            <!-- magenta bride end -->
+            <img
+              src="images/brides/IMG-20231207-WA0094.jpg"
+              alt="engagement makeup done by Persona"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
           </div>
           <!-- column 3 -->
-          <div class="col-6 col-sm-4 col-md-4">
-            <div class="image-container">
+          <div class="col-6 col-sm-3 col-md-3">
+           
               <img
                 src="images/brides/Screenshot_20240202_115533_Instagram.jpg"
-                alt="bridal makeup pictures"
+                   alt="elegant and natural makeup done by Persona"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
-                src="images/brides/IMG-20221123-WA0031.jpg"
-                alt="Bridal makeup photo"
+                src="images/brides/IMG-20221123-WA0031_403.jpg"
+                alt="Good looking bride dressed in a green lehenga for reception"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
                 src="images/brides/IMG-20231229-WA0075.jpg"
-                alt="bridal makeup pictures"
+                alt="bridal makeup done by persona team"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
-              <img
-                src="images/brides/8.jpg"
-                alt="bridal makeup pictures"
-                class="img-fluid w-100 shadow-1-strong rounded mb-4"
-              />
+            
+
+               <img
+        alt="bridal makup done by Persona"
+        class="img-fluid w-100 shadow-1-strong rounded mb-4"
+        src="images/brides/02.jpg"
+      />
+        <!-- light green bride start -->
+            <img
+               srcset="images/brides/IMG-20230506-WA0029_320.jpg 320w,
+             images/brides/IMG-20230506-WA0029_400.jpg 400w"
+              sizes="(max-width: 575px) calc(50vw - 7.5rem), (min-width: 576px) calc(25vw - 7.5rem), 200px"
+              src="images/brides/IMG-20230506-WA0029_320.jpg"
+
+              alt="beautiful kerala bride with curly hair"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+             <!-- light green bride end -->
+            
+           </div> 
+            <!-- column 4 -->
+          <div class="col-6 col-sm-3 col-md-3">
+            
               <img
                 src="images/brides/IMG-20230103-WA0030.jpg"
-                alt="Bridal makeup photo"
+                 alt="bridal makeup done by persona"
+                class="img-fluid w-100 shadow-1-strong rounded mb-4 d-none d-sm-block"
+              />
+              <img
+                src="images/brides/IMG-20240208-WA0013.jpg"
+                alt="bridal makeup done by persona"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
               <img
                 src="images/brides/IMG-20231005-WA0038.jpg"
-                alt="bridal makeup pictures"
+                alt="bridal makeup done by persona"
                 class="img-fluid w-100 shadow-1-strong rounded mb-4"
               />
-            </div>
+                 <img
+              src="images/brides/20240211_092904.jpg"
+              alt="bride wearing elegant lehenga for reception"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+
+            <img
+              src="images/brides/IMG-20231205-WA0058 (1).jpg"
+              alt="kerala style bridal makeup pictures"
+              class="img-fluid w-100 shadow-1-strong rounded mb-4"
+            />
+           
           </div>
-        </div>
+       
       </div>
     </section>
 
-    <!-- WhatsApp button start -->
-    <a
-      href="https://wa.me/+918095459035"
-      class="whatsapp-button"
-      target="_blank"
-    >
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <!-- WhatsApp button end -->
+
 
     <!-- footer start -->
-    <footer id="contact" class="footer mt-4 text-bg-dark py-5">
+    <footer id="contact" class="footer text-bg-dark py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-6 col-md-4">
             <address>
               Visit us at: <br />
               Mayil-Vahanam Forties East Fort Mythan <br />
@@ -255,15 +307,30 @@
             </address>
             <a href="tel:+14702267456">CLICK TO CALL</a>
           </div>
-          <div class="col-md-4">
+          <div class="col-6 col-md-4">
             <div class="map">
-              <iframe
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.5303553091994!2d-0.14076024298621118!3d51.51210217963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d502268421%3A0x6a7d62889992f993!2sRegent+St%2C+Soho%2C+London+W1B+5TH%2C+UK!5e0!3m2!1sen!2sro!4v1476174541049"
                 width="200"
-              ></iframe>
+              ></iframe> -->
+            </div>
+            <div class="d-block d-md-none">
+               <h5 class="d-none d-md-block">Connect</h5>
+            <div class="d-flex gap-3 pt-4">
+              <a href="https://www.facebook.com/persona.b.3"
+                ><i class="fab fa-facebook fa-3x text-white"></i
+              ></a>
+              <a href="https://www.instagram.com/personabeautytouch/"
+                ><i class="fab fa-instagram fa-3x text-white"></i
+              ></a>
+              <a
+                href="https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0"
+                ><i class="fab fa-youtube fa-3x text-white"></i
+              ></a>
+            </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="d-none d-md-block col-md-4">
             <h5>Connect</h5>
             <div class="d-flex gap-3">
               <a href="https://www.facebook.com/persona.b.3"
@@ -285,12 +352,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/glider.min.js"></script> -->
-    <script
-      src="https://static.elfsight.com/platform/platform.js"
-      data-use-service-core
-      defer
-    ></script>
-    <!-- <script src="js/script.js"></script> -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>
