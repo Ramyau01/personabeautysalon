@@ -1,0 +1,163 @@
+article {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" ><rect fill="%23ffffff" width="24" height="24"/><defs><linearGradient id="a" x1="0" x2="0" y1="0" y2="1" gradientTransform="rotate(12,0.5,0.5)"><stop offset="0" stop-color="%23FFCC00"/><stop offset="1" stop-color="%23F36463"/></linearGradient></defs><pattern id="b" width="20" height="20" patternUnits="userSpaceOnUse"><circle fill="%23ffffff" cx="10" cy="10" r="10"/></pattern><rect width="100%" height="100%" fill="url(%23a)"/><rect width="100%" height="100%" fill="url(%23b)" fill-opacity="0.13"/></svg>');
+  background-size: cover;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.16), 0 10px 20px -2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    background-color: var(--bs-dark);
+  }
+}
+.btn-warning:hover {
+  background-color: whitesmoke;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+}
+.header {
+  height: calc(100vh - 5.69rem);
+  background: linear-gradient(rgba(60, 7, 7, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-background-mobile-original.jpeg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0px;
+    height: calc(100vh - 5.69rem);
+    background: linear-gradient(rgba(60, 7, 7, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-large-compressed.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: cover;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: calc(100vh - 5.69rem);
+    background: linear-gradient(rgba(60, 7, 7, 0.5), rgba(0, 0, 0, 0.5)), url("../images/header-large-compressed.jpeg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .hero-container {
+    margin-top: 12rem;
+  }
+}
+.xl-text {
+  font-size: 65px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: calc(1.2rem + 1vw);
+  }
+  .xl-text {
+    font-size: 45px;
+  }
+}
+.hero-text {
+  text-shadow: rgb(9, 9, 9) 1px 0 10px;
+}
+
+.card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+.modal-card {
+  animation: myAnim 2s ease 0s 2 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    transform: scale(1);
+  }
+}
+@media (min-width: 720px) {
+  .card {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    border: 1px solid #cccccc;
+    background-color: var(--bs-info);
+    cursor: pointer;
+  }
+}
+#about .image-container {
+  height: 400px;
+}
+
+@media (min-width: 720px) {
+  #about .image-container {
+    height: 500px;
+  }
+}
+.photo-container {
+  margin-right: 0.25rem;
+}
+
+.carousel-item {
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.carousel-control-next {
+  right: -5px;
+}
+
+.carousel-control-prev {
+  left: -5px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* WhatsApp green color */
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Make it slightly larger on hover */
+}
