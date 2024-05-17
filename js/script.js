@@ -1,3 +1,16 @@
+//replace hero text
+// Replace Text In Header
+const checkReplace = document.querySelector(".replace-me");
+if (checkReplace !== null) {
+  const replace = new ReplaceMe(checkReplace, {
+    animation: "animated fadeIn",
+    speed: 2000,
+    separator: ",",
+    loopCount: "infinite",
+    autoRun: true,
+  });
+}
+
 function toggleNavbar() {
   var navbar = document.getElementById("navbarNav");
   if (navbar.style.display === "flex") {
