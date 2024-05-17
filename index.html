@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="If you are looking for a parlour that specializes in Bridal Makeup, Hair and Skincare Services, you’ve found it! Visit our studio to experience personalized care that revitalizes both your hair and skin, and let us help you achieve your beauty goals."/>
+            <title>Persona - Home</title>
        <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
      <link rel="preload" fetchpriority="high" as="image" media="(min-width: 768px)" href="images/header-large-compressed.jpeg" type="image/jpeg" />
      <link rel="preload" fetchpriority="high" as="image" href="images/header-background-mobile-original.jpeg" type="image/jpeg" />
+       <link rel="preload" href="js/replaceme.min.js" as="script">
+       <script>
+  //replace hero text
+// Replace Text In Header
+const checkReplace = document.querySelector(".replace-me");
+if (checkReplace !== null) {
+  const replace = new ReplaceMe(checkReplace, {
+    animation: "animated fadeIn",
+    speed: 2000,
+    separator: ",",
+    loopCount: "infinite",
+    autoRun: true,
+  });
+}
+
+</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link 
@@ -23,9 +42,8 @@
      <link rel="stylesheet" href="css/glider.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
  
-    <title>Persona - Home</title>
-    <meta name="description" content="If you are looking for a parlour that specializes in Bridal Makeup, Hair and Skincare Services, you’ve found it! Visit our studio to experience personalized care that revitalizes both your hair and skin, and let us help you achieve your beauty goals."/>
-     <script src="js/replaceme.min.js"></script>
+
+  
 
       <script defer src="js/glider.min.js"></script>
       
@@ -35,7 +53,7 @@
      
       <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script defer src="js/bootstrap.bundle.min.js"></script>
-      <script defer src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <script async src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
     <noscript>
     <link rel="stylesheet" href="css/glider.css">

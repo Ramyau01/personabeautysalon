@@ -16,19 +16,6 @@ navbarLinks.forEach(function (link) {
   });
 });
 
-//replace hero text
-// Replace Text In Header
-const checkReplace = document.querySelector(".replace-me");
-if (checkReplace !== null) {
-  const replace = new ReplaceMe(checkReplace, {
-    animation: "animated fadeIn",
-    speed: 2000,
-    separator: ",",
-    loopCount: "infinite",
-    autoRun: true,
-  });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
