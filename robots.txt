@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Allow: /public/
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Disallow: /no-google/
+
+# Sitemap location
+Sitemap: https://personabeautysalon.in/sitemap.xml
