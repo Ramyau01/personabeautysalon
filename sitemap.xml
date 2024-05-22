@@ -15,4 +15,22 @@
 	<lastmod>2024-05-22T01:19:44+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
+    <url>
+        <loc>https://www.facebook.com/persona.b.3</loc>
+        <lastmod>2024-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+	    <url>
+        <loc>https://www.instagram.com/personabeautytouch/</loc>
+        <lastmod>2024-05-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+	    <url>
+        <loc>https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0</loc>
+        <lastmod>2024-04-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>
