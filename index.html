@@ -11,8 +11,8 @@
        <link rel="icon" href="images/favicon/android-chrome-192x192.png" />
      <link rel="preload" fetchpriority="high" as="image" media="(min-width: 768px)" href="images/header-large-compressed.jpeg" type="image/jpeg" />
      <link rel="preload" fetchpriority="high" as="image" href="images/header-background-mobile-original.jpeg" type="image/jpeg" />
-    
-     
+    <link rel="preload" href="js/replaceme.min.js" as="script">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link 
@@ -21,31 +21,32 @@
       media="print" 
       onload="this.onload=null;this.removeAttribute('media');"
     />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/fontawesome.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+
      <link rel="stylesheet" href="css/glider.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
- 
 
-  
 
-      <script defer src="js/glider.min.js"></script>
-      
-        <script defer src="js/replaceme.min.js"></script>
-      <script defer src="js/script.js"></script>
-      <script defer src="js/glider.js"></script> 
-     
-      <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script defer src="js/bootstrap.bundle.min.js"></script>
-      <script async src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <script defer src="js/replaceme.min.js"></script>
 
+  <script defer src="js/script.js"></script>
+     <script defer src="js/bootstrap.bundle.min.js"></script>
     <noscript>
     <link rel="stylesheet" href="css/glider.css">
     <link rel="stylesheet" href="css/fontawesome.css">
 
 </noscript>
+<style>
+  @media (max-width: 575px){
+ .social-icons{
+    font-size: 8vw;
+  }
+  }
+ 
+</style>
 
   </head>
   <body>
@@ -156,7 +157,7 @@ We ensure you will look stunning and feel confident on your special day.
                   Elevating your beauty from weddings to photoshoots, with premium makeup and personalized techniques to ensure you feel confident and stunning on your special day.
               </p>
               <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
-                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal1">Know More</a>
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal1" aria-label="Click on this button to know more about our makeup services">Know More</a>
               </div>
             </div>  
            <!-- Modal start -->
@@ -217,8 +218,8 @@ We ensure you will look stunning and feel confident on your special day.
      
                   </div>
                   <div class="modal-footer">
-                    <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="tel:+919037541942" class="btn btn-primary">Contact Us</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
                   </div>
                 </div>
               </div>
@@ -238,7 +239,7 @@ We ensure you will look stunning and feel confident on your special day.
                   Whether you're looking to rejuvenate damaged locks, enhance your natural shine, or try a bold new style, our expert stylists are here to help you achieve your hair goals.
                 </p>
                 <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
-                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal2">Know More</a>
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal2" aria-label="Click on this button to know more about our hair care services">Know More</a>
               </div>
                 
               </div>
@@ -278,8 +279,8 @@ We ensure you will look stunning and feel confident on your special day.
       </div>
       <div class="modal-footer">
 
-        <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="tel:+919037541942" class="btn btn-primary">Contact Us</a>
+                <button type="button" class="btn btn-secondary" aria-label="Close" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -297,7 +298,7 @@ We ensure you will look stunning and feel confident on your special day.
                  Treat yourself to a rejuvenating facial experience  by choosing from a range of skin care services tailored to your needs for a radiant, glowing complexion.
                 </p>
                    <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
-                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal3">Know More</a>
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal3" aria-label="Click on this button to know more about our skin care services">Know More</a>
               </div>
               </div>
 
@@ -332,7 +333,7 @@ We ensure you will look stunning and feel confident on your special day.
       <div class="modal-footer">
 
          <a href="tel:+919037541942" class="btn btn-primary">Contact</a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" aria-label="Close" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -351,7 +352,7 @@ We ensure you will look stunning and feel confident on your special day.
                  Discover your passion for Beauty with our comprehensive course, perfect for beginners and seasoned professionals alike.
                 </p>
                   <div class="card-footer d-flex justify-content-center mt-auto border-0 pb-2">
-                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal4">Know More</a>
+                <a href="#" class="service-btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal4" aria-label="Click on this button to know more about our Beautician Courses">Know More</a>
               </div>
               </div>
             </div>
@@ -450,7 +451,7 @@ We ensure you will look stunning and feel confident on your special day.
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="text-center py-2">
-               <a href="gallery.html" class="text-dark">See more of our work here</a>
+               <a href="gallery.html" class="text-dark" aria-label="Click on this button to see more photos">See more of our work here</a>
             </div>
            
           </div>
@@ -530,6 +531,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
           type="button"
           data-bs-target="#testimonialCarousel"
           data-bs-slide="prev"
+          aria-label="Previous"
         >
           <i class="fas fa-arrow-circle-left fa-3x text-secondary"></i>
         </button>
@@ -538,6 +540,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
           type="button"
           data-bs-target="#testimonialCarousel"
           data-bs-slide="next"
+          aria-label="Next"
         >
           <i class="fas fa-arrow-circle-right fa-3x text-secondary"></i>
         </button>
@@ -553,7 +556,7 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
 
     <!-- Testimonial end -->
       <!-- WhatsApp button start -->
-  <a href="https://wa.me/+919037541942" class="whatsapp-button" target="_blank">
+  <a href="https://wa.me/+919037541942" class="whatsapp-button" target="_blank" aria-label="Click on Whatsapp icon to chat with Saritha">
     <i class="fab fa-whatsapp"></i>
   </a>
     <!-- WhatsApp button end -->
@@ -586,18 +589,25 @@ I have joined 6 Months Beautician & Makeup Course at Persona's Beauticians Accad
               ></iframe> -->
             </div>
           </div>
-          <div class="col-md-4">
-            <h5>Connect</h5>
+          <div class="col-md-4 pt-3">
+            <h5 class="d-none d-md-block">Connect</h5>
             <div class="d-flex gap-3">
-              <a href="https://www.facebook.com/persona.b.3"><i class="fab fa-facebook fa-3x text-white"></i></a>
-              <a href="https://www.instagram.com/personabeautytouch/"><i class="fab fa-instagram fa-3x text-white"></i></a>
-              <a href="https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0"><i class="fab fa-youtube fa-3x text-white"></i></a>
+              <a href="https://www.facebook.com/persona.b.3" aria-label="Click on this button to open our facebook page"><i class="fab fa-facebook fa-3x text-white social-icons"></i></a>
+              <a href="https://www.instagram.com/personabeautytouch/" aria-label="Click on this button to open our instagram page"><i class="fab fa-instagram fa-3x text-white social-icons"></i></a>
+              <a href="https://youtube.com/@SarithaMuralidhar?si=v9kGyesmBpOg56a0" aria-label="Click on this button to open our youtube page"><i class="fab fa-youtube fa-3x text-white social-icons"></i></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
     <!-- footer end -->
+    <!-- scripts -->
+  
+<script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script defer src="js/glider.min.js"></script>
+      <script defer src="js/glider.js"></script> 
+
+      <script defer src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 
 
    
